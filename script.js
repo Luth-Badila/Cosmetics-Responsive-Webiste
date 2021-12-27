@@ -56,3 +56,74 @@ var swiper = new Swiper(".products-slider", {
         },
     },
 });
+
+var swiper = new Swiper(".arrivals-slider", {
+    loop: true,
+    grabecursor: true,
+    spaceBetween: 20,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        550: {
+            slidesPerView: 2,
+        },
+        850: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        },
+    },
+});
+var swiper = new Swiper(".arrivals-slider", {
+    loop: true,
+    grabecursor: true,
+    spaceBetween: 20,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        550: {
+            slidesPerView: 2,
+        },
+        850: {
+            slidesPerView: 3,
+        },
+        1200: {
+            slidesPerView: 4,
+        },
+    },
+});
+var swiper = new Swiper(".reviews-slider", {
+    loop: true,
+    grabecursor: true,
+    spaceBetween: 20,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        768: {
+            slidesPerView: 2,
+        },
+        991: {
+            slidesPerView: 3,
+        },
+    },
+});
+var swiper = new Swiper(".blogs-slider", {
+    loop: true,
+    grabecursor: true,
+    spaceBetween: 20,
+    breakpoints: {
+        0: {
+            slidesPerView: 1,
+        },
+        650: {
+            slidesPerView: 2,
+        },
+        1200: {
+            slidesPerView: 3,
+        },
+    },
+});
