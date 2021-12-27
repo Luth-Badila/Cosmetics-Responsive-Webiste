@@ -436,6 +436,325 @@ header #search-btn {
      object-fit: cover;
 }
 
+.team {
+  background: linear-gradient(#f5f5f5 50%, #fff 50.1%);
+}
+.team .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+.team .box-container .box {
+  border: 0.2rem solid #222;
+  text-align: center;
+}
+.team .box-container .box:hover .image img {
+  transform: scale(1.1);
+}
+.team .box-container .box:hover .image .share {
+  left: 0;
+}
+.team .box-container .box .image {
+  height: 50rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.team .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.team .box-container .box .image .share {
+  position: absolute;
+  top: 0;
+  left: -8rem;
+  background: #222;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  padding: 0 1rem;
+  gap: 1rem;
+}
+.team .box-container .box .image .share a {
+  height: 5rem;
+  line-height: 5rem;
+  width: 5rem;
+  border: 0.2rem solid #fff;
+  font-size: 2.5rem;
+  color: #fff;
+}
+.team .box-container .box .image .share a:hover {
+  background: #fff;
+  color: #222;
+}
+.team .box-container .box .content {
+  border-top: 0.2rem solid #222;
+  padding: 1.5rem;
+}
+.team .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #222;
+}
+.team .box-container .box .content p {
+  font-size: 1.5rem;
+  color: #e84393;
+}
+
+.arrivals .slide {
+  text-align: center;
+  background: #fff;
+}
+.arrivals .slide:hover .image img {
+  transform: scale(1.1);
+}
+.arrivals .slide .image {
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
+}
+.arrivals .slide .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.arrivals .slide .content {
+  padding-top: 0.5rem;
+}
+.arrivals .slide .content p {
+  font-size: 2rem;
+  color: #222;
+  line-height: 2;
+  padding: 0.5rem 0;
+}
+.arrivals .slide .content .price {
+  font-size: 2rem;
+  color: #e84393;
+}
+.arrivals .slide .content .price span {
+  color: #777;
+  font-size: 1.5rem;
+  text-decoration: line-through;
+}
+
+.reviews-slider .slide .user {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.reviews-slider .slide .user img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+}
+.reviews-slider .slide .user h3 {
+  font-size: 2rem;
+  color: #222;
+}
+.reviews-slider .slide .user .stars {
+  font-size: 1.5rem;
+  color: #e84393;
+}
+.reviews-slider .slide .text {
+  padding: 2rem;
+  background: #f5f5f5;
+  border-radius: 0.5rem;
+  line-height: 2;
+  font-size: 1.5rem;
+  color: #777;
+  position: relative;
+  margin-top: 2rem;
+}
+.reviews-slider .slide .text::before {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 3rem;
+  height: 2rem;
+  width: 2rem;
+  background: #f5f5f5;
+  transform: rotate(45deg);
+}
+
+.service {
+  background: #f5f5f5;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 2rem;
+}
+.service .box {
+  border: 0.2rem solid #222;
+  padding: 2rem;
+  text-align: center;
+  background: #fff;
+}
+.service .box:hover {
+  background: #222;
+  cursor: pointer;
+}
+.service .box:hover img {
+  filter: invert(1);
+}
+.service .box:hover h3 {
+  color: #fff;
+}
+.service .box:hover p {
+  color: #fff;
+}
+.service .box img {
+  height: 8rem;
+  margin-bottom: 0.5rem;
+}
+.service .box h3 {
+  padding: 0.7rem 0;
+  font-size: 2rem;
+  color: #222;
+}
+.service .box p {
+  font-size: 1.5rem;
+  color: #777;
+  line-height: 2;
+}
+
+.blogs .slide:hover .image img {
+  transform: scale(1.1);
+}
+.blogs .slide:hover .image .icons {
+  transform: translateY(0);
+}
+.blogs .slide .image {
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.blogs .slide .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.blogs .slide .image .icons {
+  background: #fff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translateY(10rem);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  border: 0.2rem solid #222;
+  z-index: 10;
+}
+.blogs .slide .image .icons a {
+  font-size: 1.5rem;
+  color: #222;
+}
+.blogs .slide .image .icons a i {
+  color: #e84393;
+  padding-right: 0.5rem;
+}
+.blogs .slide .image .icons a:hover {
+  color: #e84393;
+}
+.blogs .slide .content {
+  text-align: center;
+  padding: 1.5rem;
+}
+.blogs .slide .content h3 {
+  font-size: 2rem;
+  color: #222;
+}
+.blogs .slide .content p {
+  padding: 1rem 0;
+  line-height: 2;
+  color: #777;
+  font-size: 1.5rem;
+}
+
+.footer {
+  background: #f5f5f5;
+}
+.footer .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 2rem;
+}
+.footer .box-container .box h3 {
+  font-size: 2.2rem;
+  color: #222;
+  padding: 1rem 0;
+}
+.footer .box-container .box .link {
+  padding: 1rem 0;
+  display: block;
+  font-size: 1.5rem;
+  color: #777;
+}
+.footer .box-container .box .link i {
+  padding-right: 0.5rem;
+  color: #e84393;
+}
+.footer .box-container .box .link:hover {
+  color: #e84393;
+}
+.footer .box-container .box .link:hover i {
+  padding-right: 2rem;
+}
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #777;
+  padding: 1rem 0;
+}
+.footer .box-container .box p i {
+  padding-right: 0.5rem;
+  color: #e84393;
+}
+.footer .box-container .box .share {
+  margin-top: 2rem;
+}
+.footer .box-container .box .share a {
+  height: 5rem;
+  width: 5rem;
+  background: #fff;
+  border: 0.2rem solid #222;
+  font-size: 2rem;
+  line-height: 4rem;
+  color: black;
+  text-align: center;
+  margin-right: 0.3rem;
+}
+.footer .box-container .box .share a:hover {
+  background: #e84393;
+  color: #fff;
+}
+.footer .box-container .box form .email {
+  width: 100%;
+  border: 0.2rem solid #222;
+  padding: 1.2rem 1.4rem;
+  font-size: 1.6rem;
+  color: #777;
+  text-transform: none;
+  margin: 1rem 0;
+}
+.footer .credit {
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  padding: 1rem;
+  border-top: 0.2rem solid #222;
+  padding-top: 3rem;
+  color: #777;
+}
+.footer .credit span {
+  color: #e84393;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
